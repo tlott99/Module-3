@@ -14,12 +14,12 @@ public class Main {
 		AL1.add(3);
 		AL1.add(4);
 		AL1.add(5);
-		for(int i =  ; i >= 0; i --){
-		}
+
+		private static void arrayReversal(ArrayList<>);
 
 		}
 
-	}
+
 
 	private static void arrayListEditing() {
 		ArrayList<String> AL1 = new ArrayList<>(10);
