@@ -1,25 +1,47 @@
 package com.company;
 
 import java.util.ArrayList;
-import java.util.Collections;
+
 public class Main {
 
     public static void main(String[] args) {
-		//arrayListEditing();
+		arrayListEditing();
+		reverseArray(createNewArrayList());
+		addToArray();
+	}
+
+
+	private static ArrayList<Integer> createNewArrayList(){
 		ArrayList<Integer> AL1 = new ArrayList<>(6);
-		ArrayList<Integer> AL2 = new ArrayList<>(6);
-		AL1.add(0);
-		AL1.add(1);
-		AL1.add(2);
-		AL1.add(3);
-		AL1.add(4);
-		AL1.add(5);
-
-		private static void arrayReversal(ArrayList<>);
-
+		for (int i = 0; i < 6; i ++){
+			AL1.add(i);
 		}
+		return AL1;
+	}
+	private static void addToArray() {
+    	ArrayList<Integer> AL1 = new ArrayList<>();
+    	ArrayList<Integer> AL2 = new ArrayList<>();
+		for (int i = 0; i < 6; i ++){
+			AL1.add(i);
+		}
+		for (int i = 5; i >= 0; i --){
+			AL2.add(i);
+		}
+		AL1.addAll(4,AL2);
+		System.out.println(AL1);
+	}
 
-
+	private static void reverseArray(ArrayList<Integer> AL1) {
+    	int x = AL1.size();
+		int b = AL1.size();
+		ArrayList<Integer> AL2 = new ArrayList<>(10);
+		for(int i = 0; i <= x-1; i ++){
+			int j = AL1.get(b-1);
+			AL2.add(j);
+			b--;
+		}
+		System.out.println(AL2);
+	}
 
 	private static void arrayListEditing() {
 		ArrayList<String> AL1 = new ArrayList<>(10);
@@ -44,23 +66,3 @@ public class Main {
 		System.out.println(AL1);
 	}
 }
-/*Task-1: Write a java program to do the following:
-Create 2 arraylists AL1 and AL2
-Add data into AL1 and print them out
-Add data into AL2
-Add the content of collection list AL2 into AL1 starting from index 1
-Print out the new AL1
-Delete the data item at index 1 in AL1 and print out
-Print out the data at index 3 in AL1
-Replace the data at index 0 in AL1 with another data and print out
-Submit your tested code
-
-Task-2: Write a program to add index of numbers into an arraylist and print them out.
-Submit your tested code
-
-Task-3: Write a program to reverse an ArrayList by passing into a method.
-This method takes an arraylist as a parameter,
-traverses in reverse order and
-adds all the elements to the newly created arraylist.
-Finally the reversed arraylist is returned for printing.
-Submit your tested code in GitHub*/
