@@ -5,12 +5,25 @@ import java.util.Collections;
 public class Main {
 
     public static void main(String[] args) {
-		arrayListEditing();
+		//arrayListEditing();
+		ArrayList<Integer> AL1 = new ArrayList<>(6);
+		ArrayList<Integer> AL2 = new ArrayList<>(6);
+		AL1.add(0);
+		AL1.add(1);
+		AL1.add(2);
+		AL1.add(3);
+		AL1.add(4);
+		AL1.add(5);
+		for(int i =  ; i >= 0; i --){
+		}
+
+		}
+
 	}
 
 	private static void arrayListEditing() {
-		ArrayList<String> AL1 = new ArrayList();
-		ArrayList<String> AL2 = new ArrayList();
+		ArrayList<String> AL1 = new ArrayList<>(10);
+		ArrayList<String> AL2 = new ArrayList<>(4);
 		AL1.add("George");
 		AL1.add("Fred");
 		AL1.add("Ron");
